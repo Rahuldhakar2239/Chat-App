@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aquamarine;
+}
+
+.container{
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+.card-header h4{
+      color: rgb(15, 179, 15);
+}
+
+.card{
+    box-shadow: 0 0 5px whitesmoke;
+} 
+.card-body{
+    background-color: rgb(53, 48, 48);
+    padding: 25px 15px 15px 15px;
+    color: white;
+    overflow-y:auto;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.message{
+    padding: 8px 12px 4px 12px;
+    border-radius: 10px;
+    position: relative;
+    max-width: 330px;
+    margin-bottom: 30px;
+}
+.incoming_message{
+    background-color: rgb(126, 126, 235);
+    margin-right: auto;
+    color: white;
+}
+.outgoing_message{
+    margin-left: auto;
+    background-color: rgb(8, 8, 94);
+    color: white;
+}
+.message h4{
+    position: absolute;
+    left: 2px;
+    top: -20px;
+    color: white;
+    font-size: 15px;
+}
+.message p span{
+    justify-content: end;
+    padding-left: 20px;
+    font-size: 12px;
+}
+
+#textarea{
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgb(114, 113, 113);
+    font-weight: 450;
+    font-size: medium;
+    
+}
+::placeholder{
+    color: rgb(189, 193, 196);
+    font-weight: 600;
+}
+::-webkit-scrollbar{
+    visibility: hidden;
+}
