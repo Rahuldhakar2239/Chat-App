@@ -38,7 +38,7 @@
     flex-direction: column;
 }
 .message{
-    padding: 20px 10px 0px 10px;
+    padding: 22px 10px 0px 10px;
     border-radius: 10px;
     position: relative;
     max-width: 330px;
@@ -60,7 +60,7 @@
     top: 5px;
     color:white;
     font-size: 15px;
-    z-index: 1000;
+    z-index: 10;
     text-transform: capitalize;
 }
 .message p span{
