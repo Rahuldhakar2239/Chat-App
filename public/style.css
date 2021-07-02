@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 .chat_application{
   background-image: url(./Images/bg.jpg);
   min-height: 100vh;
@@ -10,7 +11,7 @@
   background-size: cover;
 }
 
-.container{
+.container-fluid{
     padding-top: 15px;
     padding-left: 30px;
     padding-right: 30px;
@@ -85,4 +86,14 @@
 }
 ::-webkit-scrollbar{
     visibility: hidden;
+}
+
+@media screen and (max-width:481px) {
+    .container-fluid{
+       padding: 0px;
+        overflow: hidden;
+    }
+    .card{
+      min-height:100vh;
+    }
 }
