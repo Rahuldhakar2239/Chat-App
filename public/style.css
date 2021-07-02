@@ -3,24 +3,33 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: aquamarine;
+.chat_application{
+  background-image: url(./Images/bg.jpg);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container{
+    padding-top: 15px;
     padding-left: 30px;
     padding-right: 30px;
-
 }
-.card-header h4{
-      color: rgb(15, 179, 15);
+.card-header{
+    background-color:rgba(15, 179, 15, 0.582) ;
+}
+.icon{
+      color: rgba(167, 11, 240, 0.541);
+}
+.fab{
+    font-size: 45px;
 }
 
 .card{
-    box-shadow: 0 0 5px whitesmoke;
+    border: none;
 } 
 .card-body{
-    background-color: rgb(53, 48, 48);
+    background-image: url(./Images/card_bg.jpg);
     padding: 25px 15px 15px 15px;
     color: white;
     overflow-y:auto;
@@ -29,7 +38,7 @@ body{
     flex-direction: column;
 }
 .message{
-    padding: 8px 12px 4px 12px;
+    padding: 20px 10px 0px 10px;
     border-radius: 10px;
     position: relative;
     max-width: 330px;
@@ -47,10 +56,12 @@ body{
 }
 .message h4{
     position: absolute;
-    left: 2px;
-    top: -20px;
-    color: white;
+    left: 4px;
+    top: 5px;
+    color:white;
     font-size: 15px;
+    z-index: 1000;
+    text-transform: capitalize;
 }
 .message p span{
     justify-content: end;
